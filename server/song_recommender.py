@@ -4,8 +4,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import sys
 
-# song1 = sys.argv[1]
-song1 = 'Immigrant Song (Album Version)'
+song1 = sys.argv[1]
+# song1 = 'Immigrant Song (Album Version)'
 ###### helper functions. Use them when needed #######
 def get_title_from_song_id(index):
 	return df1.loc[df1.index == index].values[0]
@@ -48,7 +48,7 @@ song_user_likes = song1
 
 ## Step 6: Get index of this song from its title
 song_index = get_song_id_from_title(song_user_likes)
-print(song_index)
+# print(song_index)
 similar_songs =  list(enumerate(cosine_sim[song_index]))
 
 ## Step 7: Get a list of similar songs in descending order of similarity score
@@ -62,7 +62,7 @@ for element in sorted_similar_songs:
 		print(a[0])
 		print(a[1])
 		print(a[2])
-		# print(a[3])
+		print(a[3])
 		# print(a[4])
 		# print(a[5])
 		# print(a[6])
