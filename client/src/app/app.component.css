@@ -1,0 +1,23 @@
+.main {
+  height: 100vh;
+  background: black;
+  padding: 20px;
+}
+
+nav {
+  color: whitesmoke;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.mat-form-field-infix {
+  width: 50% !important;
+}
+
+.mat-button {
+  margin: 0 10px;
+  background: #359935;
+  color: white;
+}
