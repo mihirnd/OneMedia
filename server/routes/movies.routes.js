@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.post('/recommendMovies', requestController.makeRequest);
+const moviesController = require('../controllers/movies.controller')
+router.post('/recommendMovies', moviesController.getRecommendedMovies);
 
 module.exports = router;

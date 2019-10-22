@@ -6,7 +6,9 @@ var cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 
-const songRouter = require('./routes/songs.routes')
+const songsRouter = require('./routes/songs.routes')
+const moviesRouter = require('./routes/movies.routes')
+
 // app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.urlencoded({
     extended: true
@@ -24,4 +26,5 @@ app.get('/', function (req, res) {
     res.json('Connected');
 })
 
-app.use('/songs', songRouter)
+app.use('/songs', songsRouter)
+app.use('/movies', moviesRouter)
