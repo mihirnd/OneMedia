@@ -8,6 +8,7 @@ const app = express();
 
 const songsRouter = require('./routes/songs.routes')
 const moviesRouter = require('./routes/movies.routes')
+const booksRouter = require('./routes/books.routes')
 
 // app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.urlencoded({
@@ -28,3 +29,4 @@ app.get('/', function (req, res) {
 
 app.use('/songs', songsRouter)
 app.use('/movies', moviesRouter)
+app.use('/books', booksRouter)
