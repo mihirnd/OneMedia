@@ -1,0 +1,13 @@
+<h3>
+  Recommendations for:
+  <span style="font-weight: 200">{{ title }}</span>
+</h3>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let song of Song">
+    <mat-expansion-panel-header>
+      {{ song.title }}
+    </mat-expansion-panel-header>
+    <p>Artist: {{ song.artist_name }}</p>
+    <p>Release: {{ song.release }}</p>
+  </mat-expansion-panel>
+</mat-accordion>

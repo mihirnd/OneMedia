@@ -4,8 +4,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import sys
 
-# movie1 = sys.argv[1]
-movie1 = 'Avatar'
+movie1 = sys.argv[1]
+# movie1 = 'Avatar'
 
 ###### helper functions. Use them when needed #######
 def get_title_from_index(index):

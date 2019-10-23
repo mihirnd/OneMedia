@@ -1,13 +1,13 @@
 .main {
-  height: 100vh;
-  background: black;
+  height: 120vh;
+  background: url("../assets/bg.jpg");
   padding: 20px;
 }
 
 nav {
   color: whitesmoke;
   justify-content: center;
-  width: 70%;
+  /* width: 70%; */
   margin: 0 auto;
   font-family: "Times New Roman", Times, serif;
 }

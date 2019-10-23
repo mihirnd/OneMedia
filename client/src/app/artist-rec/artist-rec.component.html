@@ -1,0 +1,11 @@
+<h3>
+  Recommendations for:
+  <span style="font-weight: 200">{{ title }}</span>
+</h3>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let artist of Artists">
+    <mat-expansion-panel-header>
+      <span (click)="recommend(artist.artist)">{{ artist.artist }}</span>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+</mat-accordion>

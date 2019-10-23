@@ -1,6 +1,6 @@
 <div class="main">
   <br />
-  <mat-accordion>
+  <mat-accordion style="width: 60%">
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
@@ -10,6 +10,7 @@
                 Type your name and age
               </mat-panel-description> -->
       </mat-expansion-panel-header>
+
       <form #book="ngForm" (ngSubmit)="findbooks(book)">
         <mat-form-field>
           <input
@@ -23,6 +24,8 @@
         </mat-form-field>
         <button mat-button type="submit">Search</button>
       </form>
+
+      <!-- <div *ngIf= -->
     </mat-expansion-panel>
 
     <mat-expansion-panel>

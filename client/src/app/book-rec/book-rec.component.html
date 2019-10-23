@@ -1,0 +1,13 @@
+<h3>
+  Recommendations for your book:
+  <span style="font-weight: 200">{{ title }}</span>
+</h3>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let book of Books">
+    <mat-expansion-panel-header>
+      <span (click)="recommend(book.title)"> {{ book.title }} </span>
+    </mat-expansion-panel-header>
+    <p>Author: {{ book.author }}</p>
+    <p>Published by: {{ book.publisher }} in {{ book.year_of_publication }}</p>
+  </mat-expansion-panel>
+</mat-accordion>

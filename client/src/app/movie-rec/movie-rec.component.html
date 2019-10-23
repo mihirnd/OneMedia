@@ -1,0 +1,14 @@
+<h3>
+  Recommendations for your movie:
+  <span style="font-weight: 200">{{ title }}</span>
+</h3>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let movie of Movies">
+    <mat-expansion-panel-header>
+      {{ movie.title }}: {{ movie.tagline }}
+    </mat-expansion-panel-header>
+    <p>Genres: {{ movie.genre }}</p>
+    <p>Directed by: {{ movie.director }}</p>
+    <p>{{ movie.summary }}</p>
+  </mat-expansion-panel>
+</mat-accordion>
