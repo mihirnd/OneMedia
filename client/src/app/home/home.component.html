@@ -31,16 +31,30 @@
           Listen to New Music
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <form>
+      <form #song="ngForm" (ngSubmit)="findsongs(song)">
         <mat-form-field>
-          <input matInput placeholder="Name of Song" />
+          <input
+            type="text"
+            ngModel
+            name="song_title"
+            id="song_title"
+            matInput
+            placeholder="Name of Song"
+          />
         </mat-form-field>
         <button mat-button type="submit">Search</button>
       </form>
 
-      <form>
+      <form #artist="ngForm" (ngSubmit)="findartists(artist)">
         <mat-form-field>
-          <input matInput placeholder="Name of Artist" />
+          <input
+            type="text"
+            ngModel
+            name="artist_title"
+            id="artist_title"
+            matInput
+            placeholder="Name of Artist"
+          />
         </mat-form-field>
         <button mat-button type="submit">Search</button>
       </form>
@@ -53,9 +67,15 @@
           Search better Movies
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <form>
+      <form #movie="ngForm" (ngSubmit)="findmovies(movie)">
         <mat-form-field>
-          <input matInput placeholder="Name of Movie" />
+          <input
+            ngModel
+            name="movie_title"
+            id="movie_title"
+            matInput
+            placeholder="Name of Movie"
+          />
         </mat-form-field>
         <button mat-button type="submit">Search</button>
       </form>
